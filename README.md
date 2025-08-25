@@ -317,6 +317,11 @@ export default nextConfig;
 pnpm add -D prisma
 ```
 
+dotenv-cli 설치하여 dotenv 명령 사용
+```bash
+pnpm add -D dotenv-cli
+```
+
 ```bash
 pnpm dlx prisma init --datasource-provider mysql
 # ==> 이런 후 .env 지우고 .env.local에 연결정보 세팅
