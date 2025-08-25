@@ -114,21 +114,13 @@ export default eslintConfig
 3. node setting
 
 ```bash
-vi .nvmrc
-```
-
-```
-v22
+echo "v22" > .nvmrc
 ```
 
 4. pnpm hoisting setting (for eslint)
 
 ```bash
-vi .npmrc
-```
-
-```
-public-hoist-pattern[]=*eslint*
+echo "public-hoist-pattern[]=*eslint*" > .npmrc
 ```
 
 5. 새롭게 pnpm 으로 설치
