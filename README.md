@@ -217,7 +217,7 @@ pnpm dlx auth secret
 
 .env.local
 ```
-DATABASE_URL="mysql://bookmarker@--@127.0.0.1:3309/bookmarkdb?connection_limit=5&pool_timeout=10"
+DATABASE_URL="mysql://sbm@--@127.0.0.1:3309/sbmdb?connection_limit=5&pool_timeout=10"
 
 AUTH_SECRET="FzF89ROlg5pOU/GBwHLxvJN"
 
