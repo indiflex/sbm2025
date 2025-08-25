@@ -19,11 +19,7 @@ bun dev
 1. create next project
 
 ```bash
-pnpm dlx create-next-app@latest sbm2025
-```
-
-```bash
-cd sbm2025
+pnpm dlx create-next-app@latest sbm2025 .
 ```
 
 2. prettier & eslint setting
