@@ -346,6 +346,20 @@ package.json에 script 설정
 },
 ```
 
+```sql
+create table Member (
+    id int unsigned not null auto_increment primary key,
+    createdAt timestamp not null default current_timestamp,
+    updatedAt timestamp not null default current_timestamp on update current_timestamp,
+    nickname varchar(31) not null,
+    email varchar(255) not null,
+    passwd varchar(128) null, 
+    image varchar(255) null,
+    introduce varchar(1024) null,
+    UNIQUE KEY `uniq_Member_email` (`email`)
+);
+```
+
 ```
 pnpm db:pull
 ```
