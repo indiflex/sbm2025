@@ -215,6 +215,21 @@ Auth key 생성 (.env.local에 자동으로 생성)
 pnpm dlx auth secret
 ```
 
+database & user 생성
+```mysql
+mysql> create database sbmdb;
+Query OK, 1 row affected (0.010 sec)
+
+mysql> create user sbm@'%' identified by 'Book&Mark1';
+Query OK, 0 rows affected (0.030 sec)
+
+mysql> grant all privileges on sbmdb.* to sbm@'%';
+Query OK, 0 rows affected (0.012 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.021 sec)
+```
+
 .env.local
 ```
 DATABASE_URL="mysql://sbm@--@127.0.0.1:3309/sbmdb?connection_limit=5&pool_timeout=10"
